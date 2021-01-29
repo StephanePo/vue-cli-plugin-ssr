@@ -12,7 +12,7 @@ module.exports = {
     },
   },
   themeConfig: {
-    repo: 'Akryum/vue-cli-plugin-ssr',
+    repo: 'StephanePo/vue-cli-plugin-ssr',
     docsDir: 'docs',
     editLinks: true,
     serviceWorker: {

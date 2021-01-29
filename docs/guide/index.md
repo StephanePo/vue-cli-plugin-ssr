@@ -7,7 +7,7 @@ This plugin is intended to be used in a project created with Vue CLI 3.
 Add the plugin to the project:
 
 ```bash
-vue add @akryum/ssr
+vue add @StephanePo/ssr
 ```
 
 Start the development server:

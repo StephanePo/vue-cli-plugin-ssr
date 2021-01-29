@@ -10,7 +10,7 @@ features:
   details: Vuex, Async routes, Express server, Custom middlewares...
 - title: Apollo Support
   details: Add vue-cli-plugin-apollo before this plugin to enjoy SSR GraphQL
-footer: LICENCE MIT - Created by Guillaume CHAU (@Akryum)
+footer: LICENCE MIT - Created by Guillaume CHAU (@Akryum), fork from Akryum
 ---
 
 <p style="text-align: center;">
@@ -56,6 +56,6 @@ footer: LICENCE MIT - Created by Guillaume CHAU (@Akryum)
 ## Quick Start:
 
 ```bash
-vue add @akryum/ssr
+vue add @StephanePo/ssr
 yarn run ssr:serve
 ```
