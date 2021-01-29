@@ -53,9 +53,11 @@ module.exports = (api, options, rootOptions) => {
         } = {}) {
           const router = createRouter()
           ${templateOptions.vuex ? 'const store = createStore()' : ''}
-          ${templateOptions.apollo ? `const apolloProvider = createProvider({
+          ${templateOptions.apollo
+? `const apolloProvider = createProvider({
             ssr: process.server,
-          })` : ''}
+          })`
+: ''}
 
           await beforeApp({
             router,

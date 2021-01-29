@@ -1,15 +1,15 @@
 export function loadAsyncComponents ({ router }) {
   // Get matched components by route and load them
-  var path = getLocation(router.options.base)
-  var resolveComponents = flatMapComponents(router.match(path), function (Component, _, match, key, index) {
+  const path = getLocation(router.options.base)
+  const resolveComponents = flatMapComponents(router.match(path), function (Component, _, match, key, index) {
     if (typeof Component === 'function' && !Component.options) {
       return new Promise(function (resolve, reject) {
-        var _resolve = function (Component) {
+        const _resolve = function (Component) {
           Component = Component.default || Component
           match.components[key] = Component
           resolve(Component)
         }
-        var res = Component(_resolve, reject)
+        const res = Component(_resolve, reject)
         if (res && res.then) {
           res.then(_resolve).catch(reject)
         }
@@ -35,7 +35,7 @@ export function flatMapComponents (route, fn) {
 
 // Imported from vue-router
 export function getLocation (base) {
-  var path = window.location.pathname
+  let path = window.location.pathname
   if (base && path.indexOf(base) === 0) {
     path = path.slice(base.length)
   }

@@ -1,12 +1,12 @@
 module.exports = {
-  'root': true,
-  'env': {
-    'node': true
+  root: true,
+  env: {
+    node: true,
   },
-  'extends': [
-    'standard'
+  extends: [
+    'standard',
   ],
-  'rules': {
+  rules: {
     'comma-dangle': ['error', 'always-multiline'],
-  }
+  },
 }
